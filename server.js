@@ -41,4 +41,7 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(5000);
+const port = process.env.PORT || 5000;
+server.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
