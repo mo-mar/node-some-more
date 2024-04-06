@@ -3,12 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>First node server</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Wow! This is served from a Node server</h1>
-    <p>I learned how to serve HTML, CSS and JS from a server</p>
+    <header>
+      <h1>Wow! This is served from a Node server</h1>
+      <h2>Incredible!</h2>
+    </header>
+    <main>
+      <p>
+        This is an ultra basic app that uses vanilla Node — no Express.js — to
+        return an HTML file.
+      </p>
+      <p>
+        The HTML file also makes requests for CSS and JS files, so the Node
+        server has to handle those too.
+      </p>
+      <p>
+        It checks for the request's extension first. If it includes ".css", it
+        returns the only stylesheet available — "style.css".
+      </p>
+      <p>It does the exact same thing for JavaScript.</p>
+      <p>This feels highly inefficient, but it's a start.</p>
+      <p>
+        I highly doubt I will update this page again, so if you stumble upon it
+        — hello! Node is cool!
+      </p>
+      <button data-alert-btn>
+        Click me to reveal how much I learned about node
+      </button>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>

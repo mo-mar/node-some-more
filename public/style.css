@@ -1,4 +1,32 @@
 body {
   background-color: wheat;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-rows: 120px 1fr;
+  justify-content: center;
+  row-gap: 40px;
+}
+
+header {
+  text-align: center;
+}
+
+p {
+  margin: 12px 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid #6e6d79;
+  padding: 12px;
 }
